@@ -37,7 +37,7 @@ class User:
         '''
         return cls.user_list
     @classmethod
-    def find_by_number(cls,number):
+    def find_by_isalnum(cls,isalnum):
         '''.username is returned if it matches the isalnum
         '''
 
