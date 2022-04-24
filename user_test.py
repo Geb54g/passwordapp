@@ -25,3 +25,13 @@ class Testuser(unittest.TestCase):
         '''
         self.new_user.save_user() 
         self.assertEqual(len(user.user_list),1)
+    def test_delete_user(self):
+            '''
+            test_delete_user to test if we can remove a user from our user list
+            '''
+            self.new_user.user_user()
+            test_user = user("Test","user","Ndolo","geb888")
+            test_user.save_user()
+
+            self.new_user.delete_user()
+            self.assertEqual(len(user.user_list),1)
