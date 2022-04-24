@@ -1,3 +1,4 @@
+from curses.ascii import isalnum
 from user import user
 
 class User:
@@ -35,4 +36,13 @@ class User:
         this gives back the user list
         '''
         return cls.user_list
+    @classmethod
+    def find_by_number(cls,number):
+        '''.username is returned if it matches the isalnum
+        '''
+
+        for user in cls.user_list:
+            if user.password == isalnum:
+                return user
+    
         
