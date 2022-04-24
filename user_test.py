@@ -23,5 +23,5 @@ class Testuser(unittest.TestCase):
         test_save_user test if the user  is saved into
          the user list
         '''
-        self.new_user.save_user() # saving the new contact
+        self.new_user.save_user() 
         self.assertEqual(len(user.user_list),1)
