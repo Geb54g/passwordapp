@@ -7,11 +7,13 @@ class Credential(User):
 
     account= [] # Empty account
 
-    def __init__(self,accountname,accountpassword):
+    def __init__(self,username,user_password,credential_name,password):
+        super().__init__(username,user_password)
+        
 
       
-        self.accountname = accountname
-        self.accountpassword = accountpassword
+        self.credential_name = credential_name
+        self.password = password
     def save_account(self):
 
         '''
