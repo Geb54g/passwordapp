@@ -1,16 +1,16 @@
-from click import confirm
 from user import User
+from random import random
 
 def  main ():
     
     while True:
-        print("Welcome to your password locker")
+        print(" Your own password locker a waits")
         print('\n')
-        print("kindly select short code to navigate through: to create new user use 'nu' ; to log to your account 'lg'or 'ex' to exit ")
+        print("kindly select short_code : new user use 'new': for log  'login'or 'exit' for exit:random password 'rnd' ")
         short_code = input().lower()
         print('\n')
         
-        if short_code == 'nu':
+        if short_code == 'new':
             print("create username")
             create_user_name = input()
             
@@ -52,10 +52,10 @@ def  main ():
                 entered_password = input()
                 
             else:
-                print(f"welcome:{entered_username}to your account") 
-                print('/n')
+               print(f"welcome:{entered_username}to your account") 
+               print('/n')
                 
-        elif short_code == 'lg':
+        elif short_code == 'login':
             print("welcome") 
             print("Enter username")
             default_user_name = input()
